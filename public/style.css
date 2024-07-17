@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.container picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.container picture img {
+  min-width: 100vw;
+}
+
+.component {
+  background-color: hsl(0, 0%, 100%);
+  width: 85%;
+  padding: 25px;
+  border-radius: 8px;
+  color: hsl(292, 42%, 14%);
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  box-shadow: 0 10px 40px #e3c5e7;
+}
+@media screen and (min-width: 725px) {
+  .component {
+    width: 625px;
+    padding: 40px;
+  }
+}
+.component .component-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.component .component-header img {
+  width: 25px;
+}
+@media screen and (min-width: 725px) {
+  .component .component-header img {
+    width: 40px;
+  }
+}
+.component .component-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+@media screen and (min-width: 725px) {
+  .component .component-header h1 {
+    font-size: 3.2rem;
+  }
+}
+.component .accordion .card {
+  padding: 20px 0;
+  border-bottom: 2px solid hsl(275, 100%, 97%);
+}
+.component .accordion .card.card-last {
+  padding-bottom: 0;
+  border: 0;
+}
+.component .accordion .card:hover {
+  cursor: pointer;
+}
+.component .accordion .card:hover .card-header h2 {
+  color: #ae58bb;
+}
+.component .accordion .card .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.component .accordion .card .card-header h2 {
+  font-weight: 600;
+}
+@media screen and (min-width: 725px) {
+  .component .accordion .card .card-header h2 {
+    font-size: 1.1rem;
+  }
+}
+.component .accordion .card p {
+  color: hsl(292, 16%, 49%);
+  font-size: 0.85rem;
+  display: none;
+  line-height: 1.5;
+}
+@media screen and (min-width: 725px) {
+  .component .accordion .card p {
+    font-size: 1rem;
+  }
+}
+.component .accordion .card.open p {
+  display: block;
+  padding-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
